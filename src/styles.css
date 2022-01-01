@@ -1,0 +1,14 @@
+h1 {
+  color: purple;
+  text-align: center;
+  text-transform: capitalize;
+}
+.crimson {
+  color: crimson;
+  text-transform: uppercase;
+}
+p {
+  color: #ee0808;
+  text-align: center;
+  font-size: small;
+}
