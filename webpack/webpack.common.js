@@ -50,7 +50,7 @@ module.exports = {
       experimentalUseImportModule: true,
     }),
     new copyPlugin({
-      patterns: [{ from: 'source', to: 'dest' }],
+      patterns: [{ from: 'src', to: 'dest' }],
     }),
   ],
 }

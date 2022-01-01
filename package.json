@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "React Webpack starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Bukoye Samuel",
+  "author": "Opeyemi gabriel<{famosipe2010@gmail.com}>",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
