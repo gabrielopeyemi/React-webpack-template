@@ -1,5 +1,5 @@
 {
-  "name": "React Webpack starter",
+  "name": "react-webpack-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,8 +13,16 @@
   "author": "Opeyemi gabriel<{famosipe2010@gmail.com}>",
   "license": "ISC",
   "dependencies": {
+    "@types/redux": "^3.6.0",
+    "@types/redux-devtools-extension": "^2.13.2",
+    "@types/redux-logger": "^3.0.9",
+    "@types/redux-persist": "^4.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
