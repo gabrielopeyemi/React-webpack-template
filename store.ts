@@ -4,12 +4,11 @@ import { persistReducer, persistStore } from 'redux-persist';
 import { createLogger } from 'redux-logger';
 import RootReducer from './Reducer/rootReducer';
 import storage from 'redux-persist/lib/storage';
-import buk from './utils/buk';
 
 const persistConfig = {
   key: 'root',
   storage,
-  // whitelist: ["AuthReducer", "UsersChannelsReducer"],
+  whitelist: ["StartReducer"],
 };
 const persistedReducer = persistReducer(persistConfig, RootReducer);
 // let composeEnhancer = compose;
@@ -20,7 +19,7 @@ const composeEnhancers = composeWithDevTools({
 const store: any = createStore(
   persistedReducer,
   composeEnhancers(
-    applyMiddleware(createLogger({ logger: buk }))
+    applyMiddleware(createLogger())
     // other store enhancers if any
   )
 );

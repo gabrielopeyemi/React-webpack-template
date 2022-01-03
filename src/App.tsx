@@ -1,14 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react'
 import './styles.css'
+import HomePage from './pages/Homepage'
 
 export const App = () => {
   return (
-    <>
-      <h1>
-        {process.env.name} Welcomes you to your{' '}
-        <div className="crimson">React Webpack Template</div> -{' '}
-        {process.env.NODE_ENV} Version
-      </h1>
-      <p>Shall we begin your project?</p>
-    </>
+    <React.Fragment>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
+    </React.Fragment>
   )
 }
